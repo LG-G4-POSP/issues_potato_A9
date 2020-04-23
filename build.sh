@@ -5,7 +5,10 @@ echo "ANDROID2468's build script for potato os"
 echo "deleting The out directory"
 rm -rf out
 
+# clear ccache
+prebuilts/misc/linux-x86/ccache/ccache -C
 # build setup
+
 source build/envsetup.sh
 
 # removing old build logs
